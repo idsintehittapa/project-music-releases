@@ -8,9 +8,9 @@ console.log(data)
 //This is the file where we import all our components!
 export const App = () => {
   return (
-    <div>
+    <section>
       <MusicHeader />
-    
+    <div className="album-wrapper"> 
     {data.albums.items.map((item) => (
       <MusicElement 
       key={item.id} 
@@ -20,6 +20,7 @@ export const App = () => {
       />
     ))}
     </div>
+    </section>
   )
 }
 
