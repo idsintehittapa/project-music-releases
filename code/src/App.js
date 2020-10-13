@@ -10,16 +10,17 @@ export const App = () => {
   return (
     <section>
       <MusicHeader />
-    <div className="album-wrapper"> 
-    {data.albums.items.map((item) => (
-      <MusicElement 
-      key={item.id} 
-      image={item.images[1].url}
-      album={item.name}
-      artist={item.artists[0].name}
-      />
-    ))}
-    </div>
+      <div className="album-wrapper">
+        {data.albums.items.map((item) => (
+          <MusicElement
+            key={item.id}
+            image={item.images[1].url}
+            album={item.name}
+            //How to get more than one artis to show here?
+            artist={item.artists[0].name}
+          />
+        ))}
+      </div>
     </section>
   )
 }

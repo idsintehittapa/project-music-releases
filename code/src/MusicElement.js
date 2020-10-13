@@ -9,7 +9,7 @@ const MusicElement = (props) => {
     <div className="album">
       <div className="album-cover">
         <img src={props.image} alt="album cover" />
-        <div className="overlay"> 
+        <div className="overlay">
           <div className="heart-icon"><Heart /></div>
           <div className="play-icon"><Play /></div>
           <div className="dots-icon"><Dots /></div>
