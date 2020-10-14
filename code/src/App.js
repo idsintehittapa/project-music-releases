@@ -16,8 +16,9 @@ export const App = () => {
             key={item.id}
             image={item.images[1].url}
             album={item.name}
+            albumUrl={item.external_urls.spotify}
             //How to get more than one artis to show here?
-            artist={item.artists[0].name}
+            item={item}
           />
         ))}
       </div>
