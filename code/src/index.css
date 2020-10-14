@@ -76,5 +76,14 @@ code {
   transform: scale(1.2);
 }
 
+.artist-name a:not(:last-of-type):after{
+  content: ", ";
+}  
 
+.artist-name a:nth-last-of-type(2):before{
+  content: none;
+}
 
+.artist-name a:nth-last-of-type(2):after {
+  content: " & ";
+} 

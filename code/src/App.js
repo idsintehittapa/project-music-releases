@@ -2,6 +2,7 @@ import React from 'react'
 import data from './data.json'
 import MusicHeader from './MusicHeader'
 import MusicElement from './MusicElement'
+import Footer from 'Footer'
 
 console.log(data)
 
@@ -21,6 +22,7 @@ export const App = () => {
           />
         ))}
       </div>
+      <Footer />
     </section>
   )
 }
