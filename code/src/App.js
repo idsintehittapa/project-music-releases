@@ -15,9 +15,8 @@ export const App = () => {
           <MusicElement
             key={item.id}
             image={item.images[1].url}
-            album={item.name}
+            albumName={item.name}
             albumUrl={item.external_urls.spotify}
-            //How to get more than one artis to show here?
             item={item}
           />
         ))}
