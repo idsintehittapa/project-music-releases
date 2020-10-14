@@ -18,6 +18,10 @@ export const App = () => {
             image={item.images[1].url}
             album={item.name}
             albumUrl={item.external_urls.spotify}
+<<<<<<< HEAD
+=======
+            //How to get more than one artis to show here?
+>>>>>>> ca2b6935802f3fbb5e593c37028339d6af1c81ed
             item={item}
           />
         ))}

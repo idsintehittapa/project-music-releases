@@ -2,10 +2,11 @@ import React from 'react'
 import { ReactComponent as Heart } from "./icons/heart.svg"
 import { ReactComponent as Play } from "./icons/play.svg"
 import { ReactComponent as Dots } from "./icons/dots.svg"
+import ArtistsLinks from 'ArtistsLinks'
 
 
 //Component for each album-item
-const MusicElement = (props) => {
+const MusicElement = props => {
   return (
     <div className="album">
       <div className="album-cover">
@@ -18,15 +19,23 @@ const MusicElement = (props) => {
       </div>
 
       <div className="album-name">
-        <p> {props.album}</p>
+        {props.album}
       </div>
 
       <div className="artist-name">
+<<<<<<< HEAD
       {props.item.artists.map(item => {
+=======
+        {props.item.artists.map(item => {
+>>>>>>> ca2b6935802f3fbb5e593c37028339d6af1c81ed
           return (
             <ArtistsLinks key={item.id} item={item} />
           )
         })}
+<<<<<<< HEAD
+=======
+      </div>
+>>>>>>> ca2b6935802f3fbb5e593c37028339d6af1c81ed
     </div>
   )
 }
