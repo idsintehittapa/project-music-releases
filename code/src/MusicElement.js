@@ -5,6 +5,7 @@ import { ReactComponent as Dots } from "./icons/dots.svg"
 import ArtistsLinks from 'ArtistsLinks'
 import AlbumLinks from 'AlbumLinks'
 
+
 //Component for each album-item
 const MusicElement = props => {
   return (

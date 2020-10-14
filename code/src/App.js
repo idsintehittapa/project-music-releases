@@ -4,6 +4,7 @@ import MusicHeader from './MusicHeader'
 import MusicElement from './MusicElement'
 import Footer from 'Footer'
 
+
 console.log(data)
 
 //This is the file where we import all our components!
@@ -18,6 +19,7 @@ export const App = () => {
             image={item.images[1].url}
             albumName={item.name}
             albumUrl={item.external_urls.spotify}
+            //How to get more than one artis to show here?
             item={item}
           />
         ))}
