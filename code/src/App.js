@@ -2,6 +2,7 @@ import React from 'react'
 import data from './data.json'
 import MusicHeader from './MusicHeader'
 import MusicElement from './MusicElement'
+import Footer from 'Footer'
 
 
 console.log(data)
@@ -16,16 +17,14 @@ export const App = () => {
           <MusicElement
             key={item.id}
             image={item.images[1].url}
-            album={item.name}
+            albumName={item.name}
             albumUrl={item.external_urls.spotify}
-<<<<<<< HEAD
-=======
             //How to get more than one artis to show here?
->>>>>>> ca2b6935802f3fbb5e593c37028339d6af1c81ed
             item={item}
           />
         ))}
       </div>
+      <Footer />
     </section>
   )
 }
