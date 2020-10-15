@@ -13,14 +13,14 @@ export const App = () => {
     <section>
       <MusicHeader />
       <div className="album-wrapper">
-        {data.albums.items.map((item) => (
+        {data.albums.items.map((album) => (
           <MusicElement
-            key={item.id}
-            image={item.images[1].url}
-            albumName={item.name}
-            albumUrl={item.external_urls.spotify}
+            key={album.id}
+            image={album.images[1].url}
+            albumName={album.name}
+            albumUrl={album.external_urls.spotify}
             //How to get more than one artis to show here?
-            item={item}
+            item={album}
           />
         ))}
       </div>
