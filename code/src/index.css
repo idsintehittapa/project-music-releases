@@ -1,3 +1,10 @@
+* {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100wv;
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -14,9 +21,15 @@ code {
     monospace;
 }
 
+.root {
+  width: 100vw;
+  margin: 0;
+}
+
 header {
  border-bottom: 0.5px solid #a0a0a0;
- margin: 0 15px 15px 15px;
+ margin: 0 auto 15px auto;
+ width: 90vw;
 }
 
 h1 {
@@ -26,14 +39,13 @@ h1 {
 .album-wrapper{
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content: center;
-  /* margin: auto; */
+  margin: auto;
+  width: 100vw;
 }
 
 .album {
-  width: 300px;
-  height: 410px;
+  width: 90%;
   margin: 0 10px;
 }
 
@@ -50,8 +62,6 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 300px;
-  height: 300px; */
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
@@ -62,9 +72,9 @@ h1 {
 .heart-icon {
   position: absolute;
   fill: #fff;
-  width: 30px;
-  top: 135px;
-  left: 46px;
+  width: 10%;
+  top: 42%;
+  left: 14%;
   opacity: 0;
   transition: .5s ease;
 }
@@ -72,9 +82,9 @@ h1 {
 .play-icon {
   position: absolute;
   fill: #fff;
-  width: 60px;
-  top: 120px;
-  left: 120px;
+  width: 20%;
+  top: 38%;
+  left: 40%;
   opacity: 0;
   transition: transform .5s ease; 
 }
@@ -82,9 +92,9 @@ h1 {
 .dots-icon {
   position: absolute;
   fill: #fff;
-  width: 30px;
-  top: 135px;
-  left: 234px;
+  width: 10%;
+  top: 42%;
+  left: 76%;
   opacity: 0;
   transition: .5s ease;
 }
@@ -99,14 +109,19 @@ h1 {
 
 .play-icon:hover {
   transform: scale(1.2);
+  opacity: .5;
 }
+
+/* .play-icon:hover:before { 
+  opacity: .5;
+} */
 
 .album-name {
   margin: 8px 0;
 }
 
 .artist-name {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
 }
 
@@ -138,10 +153,40 @@ h1 {
   content: " & ";
 } 
 
-@media (min-width: 1024px) and (max-width: 1282px){
-  .album{
-    width: 235px;
-    height: 340px;
+@media (min-width: 500px) {
+  .album {
+    width: 70%;
+  } 
+}
+
+@media (min-width: 630px) {
+  header {
+    margin-bottom: 20px;
+    width: 85vw;
+   }
+
+  .album {
+    width: 40%;
+    margin: 0px 20px;
+  } 
+}
+
+@media (min-width: 800px) {
+  .album {
+    margin: 0px 40px;
+    max-width: 300px;
+  } 
+}
+
+@media (min-width: 1024px) {
+  header {
+    margin-bottom: 30px;
+    width: 95vw;
+   }
+
+  .album {
+    width: 21%;
+    margin: 0px 20px;
   }
 }
 
@@ -149,13 +194,16 @@ h1 {
   .album {
     width: 310px;
     height: 410px;
-    margin: 0px 20px;
+    margin: 0px 25px;
   }
 }
 
 @media (min-width: 1700px) {
+  header {
+    width: 90vw;
+   }
+
   .album {
-    width: 382px;
-    height: 481px;
+    margin: 0 50px;
   } 
 }
