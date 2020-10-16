@@ -1,8 +1,6 @@
 * {
   overflow-x: hidden;
   box-sizing: border-box;
-  width: 100wv;
-  margin: 0;
 }
 
 body {
@@ -27,9 +25,9 @@ code {
 }
 
 header {
- border-bottom: 0.5px solid #a0a0a0;
- margin: 0 auto 15px auto;
- width: 90vw;
+  border-bottom: 0.5px solid #a0a0a0;
+  margin: 0 auto 15px auto;
+  width: 90vw;
 }
 
 h1 {
@@ -122,14 +120,20 @@ h1 {
   margin: 8px 0;
 }
 
+.artist-name {
+  color: #a0a0a0;
+}
+
 .album-info:hover {
-  text-decoration: underline #fff solid;
-  -webkit-text-decoration: underline #fff solid;
+  text-decoration: underline;
+  -webkit-text-decoration: underline;
+  color: #ffffff;
 }
 
 .artist-info:hover {
-  text-decoration: underline #a0a0a0 solid;
-  -webkit-text-decoration: underline #a0a0a0 solid;
+  text-decoration: underline;
+  -webkit-text-decoration: underline;
+  color: #a0a0a0;
 }
 
 .artist-name {
@@ -153,19 +157,20 @@ h1 {
   font-weight: 600;
 }
 
+/* We solved this with Javascript instead, so therefore we commented it out, 
+but leaved it here to remember what we did */
 /* This puts a comma after the artist, but not after the last artist */
-.artist-name a:not(:last-of-type):after{
+/* .artist-name a:not(:last-of-type):after{
   content: ", ";
-}  
+}   */
 /* 
 .artist-name a:nth-last-of-type(2):before{
   content: none;
 } */
-
 /* puts "&" after the second last artist (so if only two artists there is an "&")*/
-.artist-name a:nth-last-of-type(2):after {
+/* .artist-name a:nth-last-of-type(2):after {
   content: " & ";
-} 
+}  */
 
 .footer-text {
   font-size: 15px;
@@ -184,17 +189,17 @@ h1 {
   header {
     margin-bottom: 20px;
     width: 85vw;
-   }
+  }
 
   .album {
     width: 40%;
-    margin: 0px 20px;
+    margin: 0 20px;
   } 
 }
 
 @media (min-width: 800px) {
   .album {
-    margin: 0px 40px;
+    margin: 0 40px;
     max-width: 300px;
   } 
 }
@@ -203,11 +208,11 @@ h1 {
   header {
     margin-bottom: 30px;
     width: 95vw;
-   }
+  }
 
   .album {
     width: 21%;
-    margin: 0px 20px;
+    margin: 0 20px;
   }
 }
 
@@ -215,14 +220,14 @@ h1 {
   .album {
     width: 310px;
     height: 410px;
-    margin: 0px 25px;
+    margin: 0 25px;
   }
 }
 
 @media (min-width: 1700px) {
   header {
     width: 90vw;
-   }
+  }
 
   .album {
     margin: 0 50px;
