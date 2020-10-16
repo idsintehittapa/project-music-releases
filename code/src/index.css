@@ -34,6 +34,7 @@ header {
 
 h1 {
   margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .album-wrapper{
@@ -64,7 +65,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: .5s ease;
 }
@@ -98,23 +99,24 @@ h1 {
   opacity: 0;
   transition: .5s ease;
 }
-
+/* Lower the opacity of the play button icons*/
 .album-cover:hover 
-.overlay,
 .heart-icon,
 .play-icon,
 .dots-icon  {
-  opacity: 0.6;
+  opacity: .6;
 } 
 
-.album-cover:hover .play-icon:hover {
-  transform: scale(1.2);
+.album-cover:hover
+.overlay {
   opacity: 1;
 }
 
-/* .play-icon:hover:before { 
-  opacity: .5;
-} */
+/* and then when you hover over the play button, it should have full opacity  */
+.play-icon:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
 
 .album-name {
   margin: 8px 0;
@@ -122,10 +124,12 @@ h1 {
 
 .album-info:hover {
   text-decoration: underline #fff solid;
+  -webkit-text-decoration: underline #fff solid;
 }
 
 .artist-info:hover {
   text-decoration: underline #a0a0a0 solid;
+  -webkit-text-decoration: underline #a0a0a0 solid;
 }
 
 .artist-name {
@@ -149,7 +153,7 @@ h1 {
   font-weight: 600;
 }
 
-/* This puts a comma between first and second artist */
+/* This puts a comma after the artist, but not after the last artist */
 .artist-name a:not(:last-of-type):after{
   content: ", ";
 }  
@@ -158,9 +162,17 @@ h1 {
   content: none;
 } */
 
+/* puts "&" after the second last artist (so if only two artists there is an "&")*/
 .artist-name a:nth-last-of-type(2):after {
   content: " & ";
 } 
+
+.footer-text {
+  font-size: 15px;
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px;
+}
 
 @media (min-width: 500px) {
   .album {
