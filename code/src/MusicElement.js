@@ -28,9 +28,9 @@ const MusicElement = props => {
       </div>
 
       <div className="artist-name">
-          {props.item.artists.map(item => {
+          {props.item.artists.map(artists => {
             return (
-              <ArtistsLinks key={item.id} item={item} />
+              <ArtistsLinks key={artists.id} item={artists} />
             )
           })}
         </div>
