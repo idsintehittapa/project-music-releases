@@ -4,7 +4,6 @@ import MusicHeader from './MusicHeader'
 import MusicElement from './MusicElement'
 import Footer from 'Footer'
 
-
 console.log(data)
 
 //This is the file where we import all our components!
@@ -27,4 +26,3 @@ export const App = () => {
     </section>
   )
 }
-

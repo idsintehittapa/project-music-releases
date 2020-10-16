@@ -121,11 +121,15 @@ h1 {
 }
 
 .album-info:hover {
-  text-decoration: underline #fff solid;
+  text-decoration: underline;
+  -webkit-text-decoration-underline: underline;
+  text-decoration-color:#fff; 
 }
 
 .artist-info:hover {
-  text-decoration: underline #a0a0a0 solid;
+  text-decoration: underline;
+  -webkit-text-decoration-underline: underline;
+  text-decoration-color: #a0a0a0;
 }
 
 .artist-name {
@@ -178,6 +182,14 @@ h1 {
     width: 40%;
     margin: 0px 20px;
   } 
+}
+
+footer {
+  position: absolute;
+  font-size: 15px;
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px;
 }
 
 @media (min-width: 800px) {
