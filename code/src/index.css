@@ -64,7 +64,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgb(0, 0, 0);
   opacity: 0;
   transition: .5s ease;
 }
@@ -99,17 +99,17 @@ h1 {
   transition: .5s ease;
 }
 
-.album:hover 
+.album-cover:hover 
 .overlay,
 .heart-icon,
 .play-icon,
 .dots-icon  {
-  opacity: 1;
+  opacity: 0.6;
 } 
 
-.play-icon:hover {
+.album-cover:hover .play-icon:hover {
   transform: scale(1.2);
-  opacity: .5;
+  opacity: 1;
 }
 
 /* .play-icon:hover:before { 
@@ -118,6 +118,14 @@ h1 {
 
 .album-name {
   margin: 8px 0;
+}
+
+.album-info:hover {
+  text-decoration: underline #fff solid;
+}
+
+.artist-info:hover {
+  text-decoration: underline #a0a0a0 solid;
 }
 
 .artist-name {
@@ -141,13 +149,14 @@ h1 {
   font-weight: 600;
 }
 
+/* This puts a comma between first and second artist */
 .artist-name a:not(:last-of-type):after{
   content: ", ";
 }  
-
+/* 
 .artist-name a:nth-last-of-type(2):before{
   content: none;
-}
+} */
 
 .artist-name a:nth-last-of-type(2):after {
   content: " & ";
