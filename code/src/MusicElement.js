@@ -5,8 +5,7 @@ import { ReactComponent as Dots } from "./icons/dots.svg"
 import ArtistsLinks from 'ArtistsLinks'
 import AlbumLinks from 'AlbumLinks'
 
-
-//Component for each album-item
+//Component for each album-item:
 const MusicElement = props => {
   return (
     <div className="album">
@@ -24,18 +23,24 @@ const MusicElement = props => {
           key={props.id}
           albumName={props.albumName}
           albumUrl={props.albumUrl}
-          />
+        />
       </div>
-
+    {
+    /* here we specify what is imoprted from ArtistLinks, 
+    where we use a function to specify where the "," and "& should go" */}
       <div className="artist-name">
-          {props.item.artists.map(artists => {
-            return (
-              <ArtistsLinks key={artists.id} item={artists} />
-            )
-          })}
-        </div>
+        {props.item.artists.map((artists, index) => {
+          return (
+            <ArtistsLinks
+              key={artists.id}
+              item={artists}
+              artistIndex={index}
+              artistLength={props.item.artists.length}
+            />
+          )
+        })}
       </div>
+    </div>
   )
 }
-
 export default MusicElement;

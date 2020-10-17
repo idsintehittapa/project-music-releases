@@ -1,12 +1,15 @@
 # Music Releases
-Replace this readme with your own information about your project.
+This project uses React components to build a page which shows new album and single releases.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project is part of Technigo bootcamp.
 
 ## The problem
+The biggest challenge for us this week was to use our previous knowledge in Javascript and to incorporate that knowledge together with react.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We managed to get a strucure and do components the first day, but when we were trying to make functions in the code we found it more challenging. 
+We did the red level, and that was what we aimed for.
+
+If we had more time we would like to dig deeper into the problems we encountered.
 
 ## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://music-releases-site-hanna-johanna.netlify.app/
